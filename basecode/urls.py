@@ -30,11 +30,13 @@ from oauth2_provider.contrib.rest_framework import TokenHasReadWriteScope, Token
 class UserSerializer(serializers.ModelSerializer):
     class Meta:
         model = User
+        fields = '__all__'
 
 
 class GroupSerializer(serializers.ModelSerializer):
     class Meta:
         model = Group
+        fields = '__all__'
 
 
 # ViewSets define the view behavior.
